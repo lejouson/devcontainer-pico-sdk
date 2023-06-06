@@ -6,9 +6,9 @@ RUN git clone -b master --depth=1 https://github.com/raspberrypi/pico-sdk.git ${
   && git -C ${PICO_SDK_PATH}/lib/tinyusb submodule update --init --depth=1 hw/mcu/raspberry_pi
 
 FROM alpine:edge AS toolchain
-LABEL es.gont.name="Pico SDK 1.5.0"
-LABEL es.gont.description="Dockerized environment for building C/C++ PICO SDK based applications. Targeted for GitHub Actions."
+LABEL org.opencontainers.image.title="Pico SDK"
 LABEL org.opencontainers.image.source="https://github.com/jisbert/docker-pico-sdk"
+LABEL org.opencontainers.image.description="Dockerized environment for building C/C++ PICO SDK based applications. Targeted for GitHub Actions."
 ENV PICO_SDK_PATH=/pico-sdk
 ENV CMAKE_GENERATOR=Ninja
 COPY --from=pico-sdk /pico-sdk /pico-sdk
