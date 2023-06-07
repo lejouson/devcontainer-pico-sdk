@@ -12,9 +12,9 @@ Personal access token (classic). See [documentation](https://docs.github.com/en/
 Based on [GitHub documentation](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
 
 ```bash
-$ docker build -t ghcr.io/user/pico-sdk:1.5.0 -t ghcr.io/user/pico-sdk:latest docker # (1)
-$ export CR_PAT=YOUR_TOKEN; echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin # (2)
-$ docker push -a ghcr.io/user/pico-sdk:latest # (3)
+docker build -t ghcr.io/user/pico-sdk:1.5.0 -t ghcr.io/user/pico-sdk:latest docker # (1)
+export CR_PAT=YOUR_TOKEN; echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin # (2)
+docker push -a ghcr.io/user/pico-sdk:latest # (3)
 ```
 
 1. Build the image
