@@ -1,4 +1,4 @@
-FROM alpine:edge AS pico-sdk
+FROM alpine:20230329 AS pico-sdk
 LABEL org.opencontainers.image.title="Docker Pico SDK"
 LABEL org.opencontainers.image.source="https://github.com/jisbert/docker-pico-sdk"
 LABEL org.opencontainers.image.description="Dockerized environment for building C/C++ PICO SDK based applications. Targeted for GitHub Actions."
