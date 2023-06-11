@@ -9,7 +9,7 @@ RUN apk add --no-cache \
   git=2.41.0-r0 \
   cmake=3.26.4-r1 \
   cpputest=4.0-r1 \
-  g++=13.1.1_git20230603-r10 \
+  g++=13.1.1_git20230603-r0 \
   g++-arm-none-eabi=13.1.0-r0 \
   lcov=2.0-r1 \
   python3=3.11.4-r0 \
