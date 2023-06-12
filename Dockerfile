@@ -1,7 +1,7 @@
 FROM alpine:20230329 AS pico-sdk
-LABEL org.opencontainers.image.title="Docker Pico SDK"
-LABEL org.opencontainers.image.source="https://github.com/jisbert/docker-pico-sdk"
-LABEL org.opencontainers.image.description="Dockerized environment for building C/C++ PICO SDK based applications. Targeted for GitHub Actions."
+LABEL org.opencontainers.image.title="Raspberry Pi Pico SDK Dev Container"
+LABEL org.opencontainers.image.source="https://github.com/jisbert/devcontainer-pico-sdk"
+LABEL org.opencontainers.image.description="Containerized environment for developing C/C++ Raspberry Pi Pico SDK based applications."
 ENV PICO_SDK_PATH=/pico-sdk
 ENV CMAKE_GENERATOR=Ninja
 RUN apk add --no-cache \
