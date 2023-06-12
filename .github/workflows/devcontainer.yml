@@ -10,6 +10,9 @@ jobs:
   build:
     name: Pre-build dev container
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
 
     steps:
       - name: Checkout Code
