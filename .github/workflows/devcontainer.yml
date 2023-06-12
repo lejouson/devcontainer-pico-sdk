@@ -32,4 +32,5 @@ jobs:
         with:
           imageName: ghcr.io/${{ github.repository }}
           cacheFrom: ghcr.io/${{ github.repository }}
+          imageTag: latest,v1.5.0
           push: always
