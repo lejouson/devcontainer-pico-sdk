@@ -9,7 +9,7 @@ RUN apk add --no-cache \
   cmake=3.26.4-r1 \
   cpputest=4.0-r1 \
   doxygen=1.9.7-r0 \
-  g++=13.1.1_git20230603-r0 \
+  g++-13.1.1_git20230617-r0 \
   g++-arm-none-eabi=13.1.0-r0 \
   git=2.41.0-r0 \
   gzip=1.12-r1 \
