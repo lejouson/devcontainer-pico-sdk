@@ -1,4 +1,4 @@
-FROM alpine:20230329 AS pico-sdk
+FROM alpine:20231219 AS pico-sdk
 LABEL org.opencontainers.image.title="Raspberry Pi Pico SDK Dev Container"
 LABEL org.opencontainers.image.source="https://github.com/jisbert/devcontainer-pico-sdk"
 LABEL org.opencontainers.image.description="Containerized environment for developing C/C++ Raspberry Pi Pico SDK based applications."
