@@ -11,7 +11,7 @@ RUN apk add --no-cache \
   doxygen=1.10.0-r0 \
   g++=13.2.1_git20240309-r0 \
   g++-arm-none-eabi=13.2.0-r0 \
-  git=2.44.0-r0 \
+  git=2.44.0-r1 \
   gzip=1.13-r0 \
   lcov=2.0-r2 \
   python3=3.11.8-r0 \
