@@ -4,8 +4,6 @@ LABEL org.opencontainers.image.source="https://github.com/jisbert/devcontainer-p
 LABEL org.opencontainers.image.description="Containerized environment for developing C/C++ Raspberry Pi Pico SDK based applications."
 ENV PICO_SDK_PATH=/pico-sdk
 ENV CMAKE_GENERATOR=Ninja
-RUN useradd -m pi
-USER pi
 RUN apk add --no-cache \
   -X https://dl-cdn.alpinelinux.org/alpine/edge/testing \
   cmake=3.29.1-r0 \
