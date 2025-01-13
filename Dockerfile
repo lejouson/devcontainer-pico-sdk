@@ -10,12 +10,12 @@ RUN apk add --no-cache \
   cpputest=4.0-r1 \
   doxygen=1.10.0-r0 \
   g++=13.2.1_git20240309-r0 \
-  g++-arm-none-eabi=13.2.0-r0 \
-  git=2.44.0-r1 \
+  g++-arm-none-eabi=14.2.0-r1 \
+  git=2.47.1-r0 \
   gzip=1.13-r0 \
-  lcov=2.0-r2 \
-  python3=3.11.8-r0 \
-  samurai=1.2-r5
+  lcov=2.0-r3 \
+  python3=3.12.8-r1 \
+  samurai=1.2-r6
 RUN git clone -b master --depth=1 https://github.com/raspberrypi/pico-sdk.git ${PICO_SDK_PATH} \
   && git -C ${PICO_SDK_PATH}/lib submodule update --init --depth=1 \
   && git -C ${PICO_SDK_PATH}/lib/tinyusb submodule update --init --depth=1 hw/mcu/raspberry_pi
