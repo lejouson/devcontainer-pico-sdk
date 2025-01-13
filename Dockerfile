@@ -6,12 +6,12 @@ ENV PICO_SDK_PATH=/pico-sdk
 ENV CMAKE_GENERATOR=Ninja
 RUN apk add --no-cache \
   -X https://dl-cdn.alpinelinux.org/alpine/edge/testing \
-  cmake=3.29.1-r0 \
-  cpputest=4.0-r1 \
-  doxygen=1.10.0-r0 \
-  g++=13.2.1_git20240309-r0 \
+  cmake=3.31.4-r0 \
+  cpputest=4.0-r2 \
+  doxygen=1.13.2-r0 \
+  g++=14.2.0-r5 \
   g++-arm-none-eabi=14.2.0-r1 \
-  git=2.47.1-r0 \
+  git=2.48.0-r0 \
   gzip=1.13-r0 \
   lcov=2.0-r3 \
   python3=3.12.8-r1 \
