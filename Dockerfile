@@ -6,15 +6,15 @@ ENV PICO_SDK_PATH=/pico-sdk
 ENV CMAKE_GENERATOR=Ninja
 RUN apk add --no-cache \
   -X https://dl-cdn.alpinelinux.org/alpine/edge/testing \
-  cmake=3.31.4-r0 \
+  cmake=4.1.3-r0 \
   cpputest=4.0-r2 \
   doxygen=1.13.2-r0 \
-  g++=14.2.0-r5 \
-  g++-arm-none-eabi=14.2.0-r1 \
-  git=2.48.0-r0 \
-  gzip=1.13-r0 \
-  lcov=2.0-r3 \
-  python3=3.12.8-r1 \
-  samurai=1.2-r6
+  g++=15.2.0-r2 \
+  g++-arm-none-eabi=15.2.0-r0 \
+  git=2.52.0-r0 \
+  gzip=1.14-r2 \
+  lcov=2.3.1-r1 \
+  python3=3.12.12-r0 \
+  samurai=1.2-r7
 RUN git clone -b master --depth=1 https://github.com/raspberrypi/pico-sdk.git ${PICO_SDK_PATH} \
   && git -C ${PICO_SDK_PATH}/lib submodule update --init --depth=1
