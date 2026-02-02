@@ -1,3 +1,6 @@
+> [!WARNING]
+> This repository is archived and unmantained.
+
 # Dev container for Raspberry Pi Pico SDK
 
 The published image can be used to setup the development environment for a project for the Raspberry Pi Pico using the [Visual Studio Code Extension][] or [GitHub Codespaces][], among others. It can also be used to build the project with GitHub Actions or other supported CI systems.
